@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+        <legend>Información Personal</legend>
+        <label for="Nombre">Nombre:</label>
+        <input id="Nombre" type="text" required>
+        <br><br>
+        <label for="Email">Correo electronico:</label>
+        <input id="Email" type="Email" required>
+        <br><br>
+        <label for="Password">Contraseña:</label>
+        <input id="Password" type="password" required>
+        <br><br>
+        <label For="Horario">Fecha de Nacimiento:</label>
+        <input id="Horario" type="date">
+        <br><br>
+        <label for="Edad">Edad:</label>
+        <input id="Edad" type="number" min="18" max="120">
+        <br><br>
+        
+        <label for="Genero">Género:</label>
+        
+        <input id="Opcion1" name="Opcion" type="radio" value="Opcion1">
+        <label for="Opcion1">Masculino</label>
+        
+        <input id="Opcion2" name="Opcion" type="radio" value="Opcion2">
+        <label for="Opcion2">Femenino</label>
+        
+        <input id="Opcion3" name="Opcion" type="radio" value="Opcion3">
+        <label for="Opcion3">Otro</label>
+        
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Preferencias</legend>
+            <div>Intereses(Selecciona todos los que apliquen):</div>
+            <input type="checkbox" value="Deportes"> Deportes
+            <input type="checkbox" value="Música"> Música
+            <input type="checkbox" value="Lectura"> Lectura
+            <input type="checkbox" value="Viajes"> Viajes  
+            <br><br>
+            <label for="Pais">País de residencia:</label>
+            <select>
+                <option disabled selected>Selecciona un país</option>
+                <option value="option1">España</option>
+                <option value="option2">México</option>
+                <option value="option3">Argentina</option>
+                <option value="option3">Colombia</option>
+                <option value="option3">Perú</option>
+            </select>
+            </fieldset>
+        <fieldset>
+        <legend>Dirección IPv4</legend>
+        <label for="IP">Dirección IP:</label>
+        <input id="IP" type="text" pattern="^([0-9]{1,3}).([0-9]{1,3}).([0-9]{1,3}).([0-9]{1,3})$">
+        </fieldset>
+        <Fieldset>
+        <legend>Información adicional</legend>
+        <label for="mensaje">Comentario: </label><br>
+        <textarea rows="4" cols="50" placeholder="Comentario" id="mensaje"></textarea>
+        </Fieldset>
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+</html>
